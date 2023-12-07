@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--Title, Style and Meta data is captured within the head tags*/-->
+  <title>Personal Website</title>
+  <!--styling for Nav, Section and Footer*/-->
+  <style>
+    nav {
+      background-color: #333333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    section {
+      margin: 20px;
+      align-items: center;
+      padding: 0.5%;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 
+1- Create the navbar: home, about, work, resume, contact
+-->
+<div>
+<nav>
+  
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#work">Work</a>
+  <a href="#resume">Resume</a>
+  <a href="#contact">Contact</a>
+</nav>
+</div>
+<!--2- Create the “about” section, ”work” section, ”resume” section, and ”contact” section (using HTML Forms)-->
+<section id="about">
+  <img src="images/headshot.png" height="10%" width="10%">
+  <h2>About</h2>
+  <!-- Your about content goes here -->
+  <p>Am a technology expert,experinced in eBusiness, Digital and Cloud Applications.
+    Am currently taking a study break to pursue my MSc in AI, Data Science and Digital Business.
+    My most recent position was at a multinational, as the Regional eBusiness and Cloud Lead. 
+    I was responsible for driving digital transformation through automation of key (MSE)Marketing, 
+    Sale and eBusiness processes for the brands in the countries that fall in the united states region.
+    I worked with various agencies to onboard and manage 3rd party applications according to company's standards 
+    and expectations. I implemented ISMS controls to mitigate risks and successfully passed ISO 27001 audits, demonstrating 
+    my commitment to information security and compliance.
+  </p>
+</section>
+
+<section id="work">
+  <h2>Work</h2>
+  <!-- Your work content goes here -->
+  <p>
+    <h3>Senior Systems Engineer</h3>
+    <ul>
+    <li><b>Briliant Tech Solutions, San Francisco, CA</b><br>
+    <i>2018 - 2023</i></li>
+
+    Led a team of engineers in the design and implementation of cloud-based infrastructure solutions.
+    Developed and maintained scalable systems, reducing downtime by 30% through proactive monitoring and optimization.
+    Collaborated with cross-functional teams to streamline processes and enhance product performance.
+    Lead Software Developer
+    
+    <li><b>Tech Innovations Ltd., New York City, NY</b><br>
+    <i>2014 - 2018</i></li>
+    
+    Spearheaded the development of a cutting-edge mobile application, achieving 1 million+ downloads within the first year of launch.
+    Mentored junior developers, conducting regular code reviews and implementing best practices to ensure high-quality deliverables.
+    Collaborated with product managers to define project scopes and timelines, consistently meeting aggressive deadlines.
+    Systems Analyst
+    
+    <li><b>Global IT Solutions, Chicago, IL</b><br>
+    <i>2010 - 2014</i></li>
+    
+    Managed the integration of enterprise-level systems, resulting in a 20% increase in operational efficiency.
+    Conducted in-depth analysis of existing systems, recommending and implementing improvements that saved 15% in annual operating costs.
+    Provided technical expertise and support to various departments, resolving complex issues and optimizing workflow.
+
+  </ul>
+  </p>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <!-- Your resume content goes here -->
+  <p>This is the Resume section of my website.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Section</h2>
+  <!-- Your contact form goes here -->
+  <form action="/submit_contact" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+</section>
+<!-- 
+3- Create the page footer. -->
+<footer>
+  <p>&copy; 2023 My Website</p>
+</footer>
+
+</body>
+</html>
