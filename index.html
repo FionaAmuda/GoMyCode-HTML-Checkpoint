@@ -9,22 +9,22 @@
   <!-- 
 1- Create the navbar: home, about, work, resume, contact
 -->
-
+<header id="home">
+  
 <nav>
- <h2>Hey,Am Fiona Amuda <br> and this is my personal website....</h2>
- 
- <a href="/index.html">Home</a></li>
- <a href="/index.html">About</a></li>
- <a href="/work.html">Work</a></li>
- <a href="/resume.html">Resume</a></li>
- <a href="/contact.html">Contact</a></li>
+
+ <a href="#home">Home</a></li>
+ <a href="#about">About</a></li>
+ <a href="#work">Work</a>
+ <a href="#resume">Resume</a></li>
+ <a href="#contact">Contact</a></li>
 
 </nav>
-
+</header>
 <hr/>
 
 <!--2- Create the “about” section, ”work” section, ”resume” section, and ”contact” section (using HTML Forms)-->
-<section>
+<section id="about">
   
   <h2>About</h2>
   <p><img src="images/headshot.png" width="10%" height="10%" alt="profile photo"><br>
@@ -41,7 +41,7 @@
 
 <hr/>
 
-<section>
+<section id="work">
   <h2>Work</h2>
   <p>
     <h3>Senior Systems Engineer</h3>
@@ -73,6 +73,29 @@
   </p>
 </section>
 
+<hr/>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p>This is the Resume section of my website. Since this repository is public i will put an image of a template.</p>
+  <img src="/Images/Resume.png" alt="resume image">
+</section>
+
+<hr/>
+
+<section id="contact">
+  <h2>Contact Section</h2>
+  <form action="/submit_contact" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  <img src="/Images/Contact.png" width=500px alt="contact form image">
+</section>
 <hr/>
 <!-- 3- Create the page footer. -->
 <footer>
